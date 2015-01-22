@@ -7,19 +7,19 @@ maintainer:          abm221617@gmail.com
 copyright:           (c) 2014 Armando Blancas
 category:            Data
 build-type:          Simple
-cabal-version:       >=1.10
+cabal-version:       >=1.22     
 
 executable trex
   main-is:           Main.hs
   other-modules:     Quote, Fields, First, Shape, Select
   other-extensions:  OverloadedStrings, ScopedTypeVariables, QuasiQuotes, BangPatterns
-  build-depends:     base >=4.7 && <4.8, 
-                     cassava >=0.4 && <0.5, 
-                     vector >=0.10 && <0.11, 
-                     bytestring >=0.10 && <0.11, 
-                     template-haskell >=2.9 && <2.10, 
-                     text >=1.1 && <1.2, 
-                     regex-base >=0.93 && <0.94, 
-                     regex-tdfa >=1.2 && <1.3
+  build-depends:     base,
+                     cassava,
+                     vector,
+                     bytestring,
+                     template-haskell,
+                     text, 
+                     regex-base,
+                     regex-tdfa
   hs-source-dirs:    src
   default-language:  Haskell2010
